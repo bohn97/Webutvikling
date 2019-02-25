@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <title>Webutvikling - Oblig 1 </title>
+    <link rel="stylesheet" href="css/stilark.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="icon" href="bilder/laptop.png" type="image/x-icon"/>
+  </head>
+
+  <body>
+    <main>
+      <header class="main-header">
+        <h1>Karoline Bøhn Karlsen </h1>
+
+        <nav class="navbar">
+          <a href="index.html">Oblig 1 </a>
+          <a href="artikkel.html">Oppgave 2 </a>
+          <a href="innhold-vs-design.html">Oppgave 3 </a>
+          <a href="webserver.html">Oppgave 4 </a>
+          <a href="semantikk.html">Oppgave 5 </a>
+          <a href="box-modellen.html">Oppgave 7 </a>
+        </nav>
+      </header>
+
+      <section class="main-section">
+        <article>
+          <header class="article-header">
+            <h2>Semantikk </h2>
+            <p>Lagt ut <time datetime="2018-09-14">14.09.18 </time> </p>
+          </header>
+
+          <figure>
+            <img src="bilder/html-structure.gif" alt="html-structure"/>
+            <figcaption>Foto: HTML struktur </figcaption>
+          </figure>
+
+          <section class="sub-section">
+            <h4>&lt;header&gt;</h4>
+            <p>Definerer et område øverst på siden som vanligvis inneholder en tittel og en logo. En header kan også gjelde innenfor en individuell article/section. Det er da vanlig at den inneholder en tittel og publiseringsdato. </p>
+            <h4>&lt;footer&gt;</h4>
+            <p>Har tilsvarende funksjon som header, men gjelder nederst på siden. Dette feltet inneholder vanligvis kontaktinformasjon, rettighetsinformasjon og informasjon om når siden sist ble oppdatert. En footer kan også gjelde innenfor en individuell article/section. Da kan footeren inneholde informasjon om hvem som har skrevet innholdet, linker for å dele artikkelen, og lenker til relaterte dokumenter. </p>
+            <h4>&lt;nav&gt; </h4>
+            <p>Brukes til å markere den interne navigasjonsmenyen på nettsiden, som f.eks. hovedmenyen. En vanlig navigasjonsstruktur kan inneholde en innholdsfortegnelse, eller en annen form for navigasjon av nettstedet, i form av lenker internt på siden eller til andre sider.</p>
+            <h4>&lt;main&gt; </h4>
+            <p>Er hovedinnholdet på en nettside. Informasjonen som skal formidles plasseres her. Main kan deles opp i section og article. </p>
+            <h4>&lt;article&gt; </h4>
+            <p>En beholder for hvilken som helst del av en nettside som kan stå alene. Den er selvstendig og helst ikke avhengig av resten av siden for å gi mening. Article omhandler et tema. Dersom en side inneholder flere artikler, vil hver artikkel være plassert i sin eget article. Den kan bestå av en header, et eller flere avsnitt og en footer. I tillegg kan article være delt opp i flere section. </p>
+            <h4>&lt;section&gt; </h4>
+            <p>Brukes til å samle sammen deler av nettsiden som hører sammen/har innhold som er relatert til hverandre. Section kan inneholde flere article, som har et felles tema/hensikt. Det kan også brukes til å dele opp article i adskilte deler. <br />
+              Section brukes til å strukturere innholdet på siden, mens article inneholder selve informasjonen. </p>
+            <h4>&lt;aside&gt; </h4>
+            <p>Innhold som befinner seg på siden av main. Feltet er som oftest relatert til main ved at den inneholder faktabokser, søkefelt eller annonser. Dersom aside befinner seg i article, bør den inneholde informasjon som er relatert til artikkelen, men ikke avgjørende for betydningen. Dette kan f.eks. være sitater, eller en liten ordliste. </p>
+            <h4>&lt;summary&gt; &lt;details&gt; </h4>
+            <p>Brukes for å skjule/vise fram ekstra informasjon eller kontroller på nettsiden. </p>
+            <h4>&lt;hgroup&gt; </h4>
+            <p>Brukes til å samle sammen ett sett med en eller flere overskrifter som følger direkte etter hverandre, slik at de blir behandlet som en enkel overskrift. </p>
+            <h4>&lt;figure&gt; &lt;figcaption&gt; </h4>
+            <p>Brukes for å sette bildetekst på bildet/figuren. </p>
+            <h4>&lt;adress&gt; </h4>
+            <p>Plasseres vanligvis i footer, og kan inneholde en postadresse eller lenke til forfatteren av websiden. </p>
+            <h4>&lt;time&gt; </h4>
+            <p>Markerer en dato/tid. Feltet kan inkludere datetime-attributtet for å oversette datoen til et maskinlesbart format. </p>
+          </section>
+
+          <section class="sub-section">
+            <h3>Fordelen med semantiske tagger </h3>
+            <p>Ved å benytte semantiske tagger fremfor &lt;div&gt; eller &lt;span&gt; elementer med semantiske klasser/ID’er for å identifisere innholdet, får innholdet en mening. </p>
+            <p>Dette gjør det enklere for søkeroboter og andre nettagenter, til å tolke siden, ved at de får informasjon om hvor det viktigste innholdet på nettsiden ligger. Søkeroboter har f.eks. mulighet til å hoppe over indeksering av navigasjonsfelt, mens nettlesere kan tilby funksjonalitet som gjør det mulig å hoppe fra en artikkel til neste, uten at det er lagt inn egne knapper for dette. </p>
+            <p>Semantiske tagger gjør også at nettsiden blir mer tilgjengelig for ulike brukere. Med programmer for talestyring, kan brukere få lest opp menyvalgene på et nettsted. Skjermlesere tillater at brukere ignorerer «uviktige» tagger, som f.eks. headers og footes, og lar de heller gå direkte til hovedinnholdet. Dette vil være til hjelp for svaksynte og blinde brukere m.m., som får innholdet på nettsidene mer effektivt formidlet. </p>
+          </section>
+        </article>
+      </section>
+
+      <footer>
+        <p>karolibk@hiof.no </p>
+        <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+      </footer>
+    </main>
+  </body>
+</html>

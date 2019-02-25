@@ -1,0 +1,85 @@
+/*Importerer hovedstilarket */
+@import url("stylesheet.css");
+
+.content {
+  display: grid;
+  grid-template-areas:
+    "main"
+    "aside";
+  grid-gap: 20px;
+  justify-self: center;
+  width: 90%;
+  margin: 20px 0;
+}
+
+main {
+  grid-area: main;
+}
+
+.main-section article {
+  padding: 1rem 0;
+}
+
+aside {
+  grid-area: aside;
+  display: grid;
+  grid-template-areas:
+    "video"
+    "article"
+    "search";
+  grid-gap: 10px;
+  border-style: outset;
+  padding: 0 1rem;
+}
+
+.aside-video {
+  grid-area: video;
+}
+
+.aside-video iframe {
+  width: 100%;
+}
+
+.aside-article {
+  grid-area: article;
+}
+
+.aside-search {
+  grid-area: search;
+}
+
+/*Gjelder skjermer >= 768px */
+@media screen and (min-width: 768px) {
+  .content {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "main aside";
+    margin: 20px 0;
+  }
+
+  aside {
+    grid-gap: 20px;
+    align-content: start;
+  }
+}
+
+/*Gjelder skjermer >= 1024px */
+@media screen and (min-width: 1024px) {
+  .content {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "main aside";
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-section article {
+    max-width: 30%;
+    padding: 1rem 0;
+  }
+}

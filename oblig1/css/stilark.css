@@ -1,0 +1,128 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sixing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header, footer, nav, section {
+  display: block;
+}
+
+.main-header {
+  background-image: url("../bilder/background.jpg");
+  background-size: cover;
+  height: 375px;
+  text-align: center;
+  padding: 1em;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 240px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  line-height: 50%;
+}
+
+h4 {
+  line-height: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 40px;
+  background-color: #BAB5C1;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14pt;
+  display: inline-block;
+  width: 140px;
+  line-height: 40px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.main-section {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
+}
+
+article {
+  padding: 1em;
+  text-align: left;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #66a3b7;
+  color: #ffffff;
+  border-style: ridge;
+  padding: 5px 10px;
+}
+
+.button:hover {
+  background-color: #5b92a4;
+}
+
+.button:active {
+  background-color: #518292;
+}
+
+#oppg2, #oppg4, #oppg6 {
+  float: left;
+  width: 50%;
+}
+
+#oppg3, #oppg5, #oppg7 {
+  float: right;
+  width: 50%;
+}
+
+footer {
+  clear: both;
+  padding: 1em;
+  background-color: #BAB5C1;
+  color: #ffffff;
+  text-align: center;
+}
+
+.article-header h2 {
+  text-align: left;
+}
+
+figure {
+  float: right;
+  width: 50%;
+  padding: 0 0 15px 15px;
+}
+
+figure img {
+  width: 100%;
+}
+
+.sub-section {
+  padding-top: 5px;
+}

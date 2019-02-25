@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <title>Webutvikling - Oblig 1 </title>
+    <link rel="stylesheet" href="css/stilark.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="icon" href="bilder/laptop.png" type="image/x-icon"/>
+  </head>
+
+  <body>
+    <main>
+      <header class="main-header">
+        <h1>Karoline Bøhn Karlsen </h1>
+
+        <nav class="navbar">
+          <a href="index.html">Oblig 1 </a>
+          <a href="artikkel.html">Oppgave 2 </a>
+          <a href="innhold-vs-design.html">Oppgave 3 </a>
+          <a href="webserver.html">Oppgave 4 </a>
+          <a href="semantikk.html">Oppgave 5 </a>
+          <a href="box-modellen.html">Oppgave 7 </a>
+        </nav>
+      </header>
+
+      <section class="main-section">
+        <article>
+          <header class="article-header">
+            <h2>Innhold vs. Design </h2>
+            <p>Lagt ut <time datetime="2018-09-14">14.09.18 </time> </p>
+          </header>
+
+          <figure>
+            <img src="bilder/content-vs-design.png" alt="content vs. design"/>
+            <figcaption>Foto: Innhold vs. design </figcaption>
+          </figure>
+
+          <section class="sub-section">
+            <h3>Kort om HTML </h3>
+            <p>HTML (HyperText Markup Language) er et markeringsspråk som gir innholdet betydning og struktur. Ideen er at man har et vanlig tekstdokument, hvor teksten markeres med tagger som gir en spesiell betydning eller spesielle egenskaper. I praksis er det to ulike typer tagger. Den ene typen marker et område med tekst og gir dette en spesiell betydning. Den andre typen markerer kun et punkt i teksten. </p>
+          </section>
+
+          <section class="sub-section">
+            <h3>Kort om CSS </h3>
+            <p>CSS (Cascading Style Sheet) definerer hvordan innholdet skal presenteres. CSS består av en rekke regler som beskriver utseendet. Hver regel består av en selector, som forteller hvilket element man skal endre, og en regelblokk, med ett eller flere par med egenskaper og verdier. Dersom man har et taggnavn som selector, gjelder denne regelen for alle tagger av denne typen, mens en ID henviser til ett element og en class til en gruppe elementer. </p>
+          </section>
+
+          <section class="sub-section">
+            <h3>Hvorfor skille mellom innhold og design </h3>
+            <p>Selv om man kan oppnå innhold, styling og layout ved å kun benytte HTML, er det viktig å skille mellom innhold og design. </p>
+            <p>Dersom man skiller på innhold og design ved å f.eks. benytte en ekstern CSS-fil, som inneholder alt av utforming og design, vil det være lettere å jobbe med de to delene uavhengig av hverandre. Man kan starte på innholdet før man bestemmer seg for hvordan siden skal se ut, og heller style og endre siden senere. </p>
+            <p>Har man to eller flere elementer som deler samme stil, kan man definere stilen i en ekstern CSS-fil og gjenbruke denne ved å linke til CSS-filen i HTML-fil. Hvis man senere ønsker å gjøre endringer på stilen, er det nok med å gå inn i CSS-filen og gjøre endringen der, istedenfor å endre alle steder hvor stilen benyttes.  </p>
+            <p>Større filer tar lenger tid å laste ned og koster mere. Da ønsker man ikke å bruke opp båndbredden på store deler med styling-informasjon på hver HTML-fil. En bedre løsning er da å ha en enkel og ryddig HTML-fil, hvor man inkluderer styling-informasjon en gang, i en ekstern CSS-fil. </p>
+            <p>Dersom HTML-siden er ren kode, uten styling-informasjon, kan siden formateres til forskjellige enheter, som benytter forskjellige attributter, ved enkelt å legge til et alternativt stilark. CSS-er lar en også angi forskjellige stilark for ulike situasjoner, som f.eks. presentasjonsmetoder og medietyper. </p>
+          </section>
+        </article>
+      </section>
+
+      <footer>
+        <p>karolibk@hiof.no </p>
+        <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body {
+  display: block;
+  background-color: #ffffff;
+  background-image: none;
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.main-header, .menu, footer {
+  display: none;
+}
+
+.content {
+  width: 100%;
+}
+
+p {
+  display: block;
+  page-break-inside: avoid;
+}
+
+figure {
+  display: block;
+  page-break-inside: avoid;
+}
+
+img {
+  display: block;
+  page-break-inside: avoid;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
+/*Legger til url etter link*/
+a::after {
+  content: " (" attr(href) ") ";
+  font-size: 14px;
+  font-weight: normal;
+}
